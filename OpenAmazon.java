@@ -106,9 +106,8 @@ public class OpenAmazon {
     
     @Test
     public void SearchEmptyString() throws InterruptedException {
-        //Open amazon site
+        //Open Amazon site
         driver.navigate().to("https://www.amazon.com/");
-        //type "car accessories";
         driver.findElement(By.id("twotabsearchtextbox")).sendKeys(" ");
         //press search button
         driver.findElement(By.id("nav-search-submit-button")).click();
